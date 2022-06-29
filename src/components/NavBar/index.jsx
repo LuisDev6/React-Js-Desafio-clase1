@@ -4,8 +4,8 @@ import './style.css';
 
 const NavBar = () => {
     return(
-<ul class="topnav">
-  <li><a class="active" href="#inicio">Inicio</a></li>
+<ul className="topnav">
+  <li><a className="active" href="#inicio">Inicio</a></li>
   <li><a href="#nosotros">Nosotros</a></li>
   <li><a href="#productos">Productos</a></li>
   <li><a href="#contacto">Contacto</a></li>
