@@ -17,13 +17,11 @@
     -moz-box-shadow: 0px 4px 5px #666666;
     box-shadow: 0px 4px 5px #666666;
     text-shadow: 1px 2px 0px #666666;
-    border: solid #56b09e 2px;
-    background: #31795c;
-    
-
+    border: solid #735896 2px;
+    background: #594474;
 }
 .btn_plus:hover {
-    background: #4cb88d;
+    background: #735896;
   }
 .btn_minus{
     font-family: Arial;
@@ -39,11 +37,11 @@
     -moz-box-shadow: 0px 4px 5px #666666;
     box-shadow: 0px 4px 5px #666666;
     text-shadow: 1px 2px 0px #666666;
-    border: solid #56b09e 2px;
-    background: #31795c;
+    border: solid #735896 2px;
+    background: #594474;
 }
 .btn_minus:hover {
-    background: #4cb88d;
+    background: #735896;
   }
 
 
@@ -61,9 +59,14 @@
     -moz-box-shadow: 0px 4px 5px #666666;
     box-shadow: 0px 4px 5px #666666;
     text-shadow: 1px 2px 0px #666666;
-    border: solid #56b09e 2px;
-    background: #31795c;
+    border: solid #735896 2px;
+    background: #594474;
   }
 .btn_add:hover {
-    background: #4cb88d;
+    background: #735896;
   }
+
+.div_count{
+    display: inline-block;
+    border: 1px solid;
+}

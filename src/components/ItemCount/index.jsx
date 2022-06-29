@@ -1,4 +1,3 @@
-import { Button } from '@mui/material';
 import React from 'react'
 import { useState } from 'react';
 import './style.css';
@@ -29,7 +28,7 @@ function ItemCount({ handleAdd, initialStock }) {
 
     };
     return (
-        <div>
+        <div className='div_count'>
             <p className='p_cantidad'>Cantidad: {count}</p>
             <button  className="btn_minus" onClick={onDecrement}>-</button>
             <button  className="btn_add" onClick={handleAdd}>Agregar al Carrito</button>
