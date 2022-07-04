@@ -6,7 +6,7 @@
 .btn_plus{
     font-family: Arial;
     color: #ffffff;
-    font-size: 26px;
+    font-size: 20px;
     padding: 13px;
     margin: 5px;
     text-decoration: none;
@@ -26,7 +26,7 @@
 .btn_minus{
     font-family: Arial;
     color: #ffffff;
-    font-size: 26px;
+    font-size: 20px;
     padding: 13px;
     margin: 5px;
     text-decoration: none;
@@ -48,7 +48,7 @@
 .btn_add {
     font-family: Arial;
     color: #ffffff;
-    font-size: 26px;
+    font-size: 20px;
     padding: 13px;
     margin: 5px;
     text-decoration: none;
@@ -67,6 +67,7 @@
   }
 
 .div_count{
+    margin-top: 10px;
     display: inline-block;
-    border: 1px solid;
+  
 }

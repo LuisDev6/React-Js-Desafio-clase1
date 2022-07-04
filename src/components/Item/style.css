@@ -1,0 +1,19 @@
+.card-image{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0px auto;
+   
+}
+p{
+    font-size: 20px;
+}
+
+.card{
+    width: 400px;
+    
+}
+.title{
+    font-size: 26px;
+    font-weight: bold;
+}
