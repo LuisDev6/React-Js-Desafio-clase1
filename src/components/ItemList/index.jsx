@@ -5,9 +5,9 @@ import './style.css'
 const ItemList = ({products}) => {
   return (
     <div className='cards'>
-        {products.map( producto => {
+{/*         {products.map( producto => {
             return <Item product={producto} key={producto.id}/>
-        })}
+        })} */}
     </div>
   )
 }
