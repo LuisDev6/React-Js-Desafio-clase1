@@ -9,9 +9,7 @@ const ItemListContainer = () => {
   const [productos, setProductos] = useState([])
   const [productosFiltrados, setProductosFiltrados] = useState([])
 
-  const params = useParams()
-
-  console.log(params);
+  const params = useParams();
 
   useEffect(() => {
     const getProductos = async () => {

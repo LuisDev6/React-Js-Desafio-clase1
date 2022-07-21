@@ -4,7 +4,7 @@
         "title": "Turbina KMD S2000",
         "price": 2000,
         "description": "350000 rpm con 5 salidas de spray",
-        "category": "instrumental rotativo",
+        "category": "turbinas",
         "image": "../image/turbina.png",
         "rating":{
             "rate": 5,
@@ -17,7 +17,7 @@
         "title": "Turbina KMD EVO Torque",
         "price": 2500,
         "description": "350000 rpm con 3 salidas de spray",
-        "category": "instrumental rotativo",
+        "category": "turbinas",
         "image": "../image/turbina.png",
         "rating":{
             "rate": 5,
@@ -27,11 +27,11 @@
     },
     {
         "id":3,
-        "title": "Turbina KMD Max Torque",
+        "title": "Micro motor",
         "price": 1000,
         "description": "350000 rpm con 1 salidas de spray",
-        "category": "instrumental rotativo",
-        "image": "../image/turbina.png",
+        "category": "micro motores",
+        "image": "../image/micro.png",
         "rating":{
             "rate": 5,
             "count": 10
@@ -40,11 +40,11 @@
     },
     {
         "id":4,
-        "title": "Turbina KMD Lumier",
+        "title": "Micro motor",
         "price": 10000,
         "description": "Con LED y con 5 salidas de spray",
-        "category": "instrumental rotativo",
-        "image": "../image/turbina.png",
+        "category": "micro motores",
+        "image": "../image/micro.png",
         "rating":{
             "rate": 5,
             "count": 10
@@ -56,8 +56,8 @@
         "title": "Turno colgante Towashi",
         "price": 20000,
         "description": "Torno colgante para mecanica dental",
-        "category": "Tornos",
-        "image": "../image/turbina.png",
+        "category": "tornos",
+        "image": "../image/torno.png",
         "rating":{
             "rate": 5,
             "count": 10
@@ -66,11 +66,11 @@
     },
     {
         "id":6,
-        "title": "Lampara Halogena MAP",
+        "title": "Contra angulo",
         "price": 18000,
         "description": "Lampara halogena de fotocurado",
-        "category": "Lamparas Halogenas",
-        "image": "../image/turbina.png",
+        "category": "contra angulos",
+        "image": "../image/contra.png",
         "rating":{
             "rate": 5,
             "count": 10
@@ -82,8 +82,8 @@
         "title": "Turbina KMD S2000",
         "price": 2000,
         "description": "350000 rpm con 5 salidas de spray",
-        "category": "instrumental rotativo",
-        "image": "../image/turbina.png",
+        "category": "contra angulos",
+        "image": "../image/contra.png",
         "rating":{
             "rate": 5,
             "count": 10
@@ -92,11 +92,11 @@
     },
     {
         "id":8,
-        "title": "Turbina KMD S2000",
+        "title": "Torno KMD S2000",
         "price": 2000,
         "description": "350000 rpm con 5 salidas de spray",
-        "category": "instrumental rotativo",
-        "image": "../image/turbina.png",
+        "category": "tornos",
+        "image": "../image/torno.png",
         "rating":{
             "rate": 5,
             "count": 10

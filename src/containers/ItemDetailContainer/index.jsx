@@ -10,28 +10,18 @@ const ItemDetailContainer = () => {
     const [productDetail, setProductDetail] = useState({});
 
     const params = useParams()
-    console.log("antes del params")
-    console.log(params)
+
 
     useEffect(() => {
         const getProductos = async () => {
             try {
                 const response = await fetch('/mocks/data.json');
                 const data = await response.json();
-                console.log("data")
-                console.log(data)
-                console.log("antes de params producid")
-                console.log(params.productId)
                 const result = data.find(data => data.id === parseInt(params.productId));
-                console.log("console del params product id")
-                console.log(params.productId)
-                console.log("antes del result")
-                console.log(result)
                 setProductDetail(result);
             } catch (error) {
                 console.log(error);
             }
-
         }
         getProductos();
     }, [params]);
