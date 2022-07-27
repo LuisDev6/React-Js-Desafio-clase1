@@ -4,15 +4,12 @@ import { Shop } from '../../context/ShopContext'
 import './style.css'
 
 const Cart = () => {
-
   const { cart } = useContext(Shop);
   const { removeItem } = useContext(Shop);
   const { setCart } = useContext(Shop);
   const {totalPrice, setTotalPrice} = useContext(Shop);
   const navigate = useNavigate();
   let precioTotal = 0;
-
-  
 
   return (
   
@@ -23,7 +20,7 @@ const Cart = () => {
           (
             <>
               <p>No hay productos en el carrito</p>
-              <button className='btn-cart' onClick={() => navigate('/')}>Seguir Comprando</button>
+              <button className='btn-cart' onClick={() => navigate('/')}>Ir al Catalogo</button>
             </>
           )
           :
@@ -59,22 +56,24 @@ const Cart = () => {
               </tbody>
               <tfoot>
                 <tr>
-                  <td></td>
+                  <td><button className='btn-cart' onClick={() => setCart([])}>Limpiar Carrito</button></td>
                   <td></td>
                   <td></td>
                   <td className='precio-total'>Precio Total:</td>
                   <td className='centrar precio-total'>${totalPrice}</td>
+                  <td><button className='btn-cart'>Finalizar Compra</button></td>
                 </tr>
               </tfoot>
             </table>
-
-
-          )}
+            
+            
+          )
+          
+          }
       </>
-      <button className='btn-cart' onClick={() => setCart([])}>Limpiar Carrito</button> <button className='btn-cart'>Finalizar Compra</button>
+       
+
     </div>
-
   )
-
 }
 export default Cart

@@ -1,6 +1,10 @@
 .p_cantidad{
     font-size: 20px;
     font-weight: bold;
+    margin: auto;
+}
+p{
+  margin: 10px;
 }
 
 .btn_plus{
@@ -44,7 +48,6 @@
     background: #735896;
   }
 
-
 .btn_add {
     font-family: Arial;
     color: #ffffff;
@@ -67,7 +70,6 @@
   }
 
 .div_count{
-    margin-top: 10px;
     display: inline-block;
   
 }

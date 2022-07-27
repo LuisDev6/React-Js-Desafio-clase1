@@ -31,6 +31,7 @@ const ItemDetail = ({ product }) => {
         <h1>{product.title}</h1>
         <img src={product.image} alt="foto producto" />
         <p>Precio: ${product.price}</p>
+        <p>Descripción:</p>
         <p>{product.description}</p>
         {!qtyAdded ?
           <ItemCount onConfirm={handleAdd} initialStock={product.stock}/>

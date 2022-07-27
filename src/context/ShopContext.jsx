@@ -13,7 +13,6 @@ const ShopProvider = ({ children }) => {
     const addItem = (producto, cantidad) => {
         console.log(producto, cantidad)
         const productoRepetido = isIncart(producto);
-        console.log(productoRepetido);
         if (productoRepetido) {
             productoRepetido.quantity += cantidad;
             setCart([...cart]);

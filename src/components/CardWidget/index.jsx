@@ -7,12 +7,16 @@ import "./style.css"
 export const CardWidget = () => {
 
   const {cart} = useContext(Shop);
+  let articulosTotales = 0;
 
-
-
+    cart.map( (producto) =>{
+    return (articulosTotales += producto.quantity)
+    })
+      
   return (
+    
     <div>
-    {cart.length && <span>({cart.length})</span>}
+    {articulosTotales && <span>({articulosTotales})</span>}
     <HiShoppingCart/>
     </div>
   )
