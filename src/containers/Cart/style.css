@@ -45,3 +45,25 @@ p{
     border: solid #735896 2px;
     background: #594474;
 }
+
+td{
+    margin: 10px;
+}
+
+table{
+    border-collapse: 20px;
+}
+
+.centrar{
+    text-align: center;
+    padding-left: 50px;
+}
+
+th{
+    padding-left: 50px;
+}
+
+.precio-total{
+    font-weight: bold;
+    font-size: 30px;
+}

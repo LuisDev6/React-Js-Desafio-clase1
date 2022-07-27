@@ -7,6 +7,7 @@ const ShopProvider = ({ children }) => {
 
 
     const [cart, setCart] = useState([]);
+    const [totalPrice, setTotalPrice] = useState(0)
 
     //Agregar un item al carrito acorde a la cantidad
     const addItem = (producto, cantidad) => {
@@ -36,7 +37,7 @@ const ShopProvider = ({ children }) => {
     
 
     return (
-        <Shop.Provider value={{ addItem, removeItem, clearCart, cart, setCart }} >
+        <Shop.Provider value={{ addItem, removeItem, clearCart, cart, setCart, setTotalPrice, totalPrice }} >
             {children}
         </Shop.Provider >
     )

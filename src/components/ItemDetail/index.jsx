@@ -35,7 +35,10 @@ const ItemDetail = ({ product }) => {
         {!qtyAdded ?
           <ItemCount onConfirm={handleAdd} initialStock={product.stock}/>
           :
+          <>
           <button className='btn_terminate' onClick={handleTerminate} >Finalizar Compra</button>
+          <button className='btn-cart' onClick={() => navigate('/')}>Seguir Comprando</button>
+          </>
         }
       </div>
     </div>
