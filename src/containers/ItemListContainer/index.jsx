@@ -17,6 +17,8 @@ const ItemListContainer = () => {
   useEffect(() => {
     const getProductos = async () => {
       try {
+
+      /* guardadoAutomático(); */
         const q = query(collection(db, "products"));
         const querySnapshot = await getDocs(q);
         const productos = [];
@@ -26,7 +28,7 @@ const ItemListContainer = () => {
           productos.push({ id: doc.id, ...doc.data() });
         });
         setProductos(productos);
-        setProductosFiltrados(productos);
+        setProductosFiltrados(productos); 
 
       } catch (error) {
         console.log("Hubo un error:");

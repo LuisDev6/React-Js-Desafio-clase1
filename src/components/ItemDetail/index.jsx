@@ -11,7 +11,6 @@ const ItemDetail = ({ product }) => {
 
   const navigate = useNavigate();
 
-  product.stock = 10;
   const [qtyAdded, setQtyAdded] = useState(0);
 
   const {addItem} = useContext(Shop);
@@ -34,7 +33,7 @@ const ItemDetail = ({ product }) => {
         <p>Descripción:</p>
         <p>{product.description}</p>
         {!qtyAdded ?
-          <ItemCount onConfirm={handleAdd} initialStock={product.stock}/>
+          <ItemCount onConfirm={handleAdd} maxQuantity={product.stock}/>
           :
           <>
           <button className='btn_terminate' onClick={handleTerminate} >Finalizar Compra</button>

@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Shop } from '../../context/ShopContext'
+import ordenGenerada from '../../utilities/generarOrden';
+import guardarOrden from '../../utilities/guardarOrden';
 import './style.css'
 
 const Cart = () => {
@@ -10,6 +12,15 @@ const Cart = () => {
   const {totalPrice, setTotalPrice} = useContext(Shop);
   const navigate = useNavigate();
   let precioTotal = 0;
+
+
+  const confirmarOrden = async () => {
+    const orden = ordenGenerada("Luis", "Arias 1234", 1122334455, "luis@gmail.com", cart, totalPrice);
+    guardarOrden(cart,orden);
+
+
+
+  }
 
   return (
   
@@ -61,7 +72,7 @@ const Cart = () => {
                   <td></td>
                   <td className='precio-total'>Precio Total:</td>
                   <td className='centrar precio-total'>${totalPrice}</td>
-                  <td><button className='btn-cart'>Finalizar Compra</button></td>
+                  <td><button className='btn-cart' onClick={confirmarOrden}>Finalizar Compra</button></td>
                 </tr>
               </tfoot>
             </table>
@@ -71,7 +82,6 @@ const Cart = () => {
           
           }
       </>
-       
 
     </div>
   )

@@ -4,12 +4,12 @@ import './style.css';
 
 
 
-function ItemCount({ onConfirm, initialStock }) {
+function ItemCount({ onConfirm, maxQuantity }) {
 
     const [count, setCount] = useState(1);
 
        const handleAdd = () => {
-        if (count <= initialStock) {
+        if (count <= maxQuantity) {
             onConfirm(count)
         }
         else {
@@ -19,7 +19,7 @@ function ItemCount({ onConfirm, initialStock }) {
 
     
     const onAdd = () => {
-        if (count < initialStock) {
+        if (count < maxQuantity) {
             setCount(count + 1);
             
         } else {
@@ -30,7 +30,7 @@ function ItemCount({ onConfirm, initialStock }) {
     };
 
     const onDecrement = () => {
-        if ((count > 1) && (count <= initialStock)) {
+        if ((count > 1) && (count <= maxQuantity)) {
             setCount(count - 1);
             
         } else {
@@ -45,7 +45,7 @@ function ItemCount({ onConfirm, initialStock }) {
             <p className='p_cantidad'>Cantidad: {count}</p>
             <button  className="btn_minus" onClick={onDecrement}>-</button>
             <button  className="btn_add" onClick={handleAdd}>Agregar al Carrito</button>
-            <button className="btn_plus" onClick={onAdd}>+</button>
+            <button  className="btn_plus" onClick={onAdd}>+</button>
         </div>
     );
 }
